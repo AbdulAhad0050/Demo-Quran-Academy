@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background-color: #283593;
+    color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #673AB7, #512DA8);
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    animation: zoomIn 1.5s ease-out;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+}
+
+.call-btn {
+    background: #0288D1;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background: #ff5722;
+}
+
+/* Courses Section */
+.courses-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #eeeeee;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    background: #ffffff;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-controls button {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.slider-controls button:hover {
+    background: #333;
+}
+
+/* Registration Section */
+.registration-section {
+    padding: 40px 20px;
+    text-align: center;
+    background: #eeeeee;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.registration-form input,
+.registration-form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.register-btn {
+    background-color: #283593;
+    color: white;
+    font-weight: bold;
+}
+
+button.register-btn:hover {
+    background-color: #ff5722;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: black;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #283593;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+  }
